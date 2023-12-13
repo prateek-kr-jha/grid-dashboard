@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.5fr 3.5fr 1.5fr;
+    grid-template-rows: 1.5fr 5fr;
+}
+
+.sidebar {
+    background-color: aqua;
+    grid-row: 1 /3;
+    grid-row: 2/3;
+}
+
+.body {
+    background-color: black;
+    display: grid;
+    grid-column: 2/3;
+
+}
+.nav-bar {
+    background-color: antiquewhite;
+    grid-column: 2/4;
+    
+}
+
+.notification-board {
+    background-color: brown;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
